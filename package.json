@@ -10,9 +10,19 @@
     "express": "^4"
   },
   "devDependencies": {
-    "sqlite3": "^5.0.4"
+    "sqlite3": "^5.1.6"
   },
   "scripts": {
     "start": "cds run"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db/my-livraria.db"
+        }
+      }
+    }
   }
 }
